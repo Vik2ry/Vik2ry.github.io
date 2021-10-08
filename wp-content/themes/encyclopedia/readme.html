@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Description</title>
+</head>
+
+<body>
+<h1 align="center">Encyclopedia Wordpress Theme</h1>
+<p align="center">Author: Denis Sureau - <a href="http://www.scriptol.com">Scriptol.com</a> </p>
+<p align="center">License: GNU GPL 2.0. </p>
+<p>URL: <a href="http://www.scriptol.com/wordpress/encyclopedia.php" target="_parent">Encyclopedia Theme</a>  </p>
+<h2>Features</h2>
+<ul>
+  <li> SEO-friendly. </li>
+  <li> Flexible width (fluid, liquid). </li>
+  <li> Minimum  (800 pixels) and maximum (1280 pixels) width. </li>
+  <li> Classic layout   with two columns and menu to the left. </li>
+  <li>Categories in tabs. Limited to 8, but may be changed. </li>
+  <li>On the home are displayed the lists of last post by categories. </li>
+  <li>  List of recent articles below  posts. </li>
+  <li> Easy to tweak. </li>
+</ul>
+<p>In addition, a 8-page tutorial can help you understand how to modify a Wordpress theme.</p>
+<h2> Compatibility</h2>
+<p> The theme has been tested and works under:</p>
+<ul>
+  <li> All Firefox versions. </li>
+  <li> Internet Explorer 8. </li>
+  <li> Safari 4. </li>
+  <li> Chrome 2. </li>
+  <li> Opera 9. </li>
+  <li> And more ... </li>
+</ul>
+
+<p>It should works under older browsers. </p>
+<h2>Installing the theme</h2>
+<ol>
+  <li> Extract the contents of the archive. </li>
+  <li>Put your  logo  at root in the encyclopedia directory.</li>
+  <li>Copy the <em>encyclopedia</em> directory into:
+    <pre>wp-content/themes/
+</pre>
+  </li>
+  <li>Go to the administration panel to activate this theme.</li>
+</ol>
+
+<h2>How to replace the textual title by a logo</h2>
+<p>In this block in header.php: </p>
+<pre>&lt;div id=&quot;logo&quot;  onclick=&quot;location.href='&lt;?php echo <strong>home_url()</strong>; ?&gt;/';&quot;&gt;<br />  &lt;?php bloginfo('name'); ?&gt; &lt;br&gt;<br />  &lt;span class=&quot;sitedesc&quot;&gt;&lt;?php bloginfo('description'); ?&gt;&lt;/span&gt;  <br />&lt;/div&gt;</pre>
+
+<p>Delete:</p>
+<pre>&lt;?php bloginfo('name'); ?&gt; &lt;br&gt;<br />&lt;span class=&quot;sitedesc&quot;&gt;&lt;?php bloginfo('description'); ?&gt;&lt;/span&gt;   </pre>
+<p>And in style.css, add thes lines into <em>#logo</em></p>
+<pre>background-image: url(logo.jpg);<br />background-repeat:no-repeat; </pre>
+<h2>Tweaking the theme </h2>
+<p>The theme is deliberately provided with all the possible elements to allow you to choose some.</p>
+<ul>
+  <li>Remove the elements that you do not want to keep inside sidebar.php, through the theme editor. </li>
+  <li> It is advisable for SEO to remove the  blogroll,  the calendar. </li>
+  <li> You can edit the style sheet (style.css) to change the minimum and maximum width, in the  <em>body</em> descriptor. </li>
+</ul>
+
+</body>
+</html>
